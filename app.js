@@ -13,11 +13,6 @@ const path=require('path')
 const app=express()
 const schemaPath='./src/model'
 
-//Bootstrap models
-// fs.readdirSync(schemaPath).forEach(function(file){
-//     if(~file.indexOf('.js'))
-//     require(schemaPath + '/' + file)
-// })
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
